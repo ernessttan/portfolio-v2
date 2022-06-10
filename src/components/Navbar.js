@@ -21,7 +21,7 @@ function Navbar() {
         <div className={`${isNavExpanded ? 'block' : 'hidden'} w-full md:block md:w-auto`}>
           <ul className="flex flex-col mt-4 md:flex-row md:mt-0 md:text-sm md:font-medium md:justify-end">
             <li className="text-lg">
-              <a href="#" className="block py-2 pr-4 pl-3">
+              <a href="/Ernest Tan_Resume.pdf" className="block py-2 pr-4 pl-3" download>
                 <span className="link link-underline link-underline-green text-black">Resume</span>
               </a>
             </li>
