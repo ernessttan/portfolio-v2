@@ -1,12 +1,12 @@
 import React from 'react';
 import Hero from './Hero';
-import About from './About';
+import ProjectGrid from './Projectgrid';
 
 function Main() {
   return (
-    <main className="p-5">
+    <main className="w-full">
       <Hero />
-      <About />
+      <ProjectGrid />
     </main>
   );
 }
