@@ -11,6 +11,7 @@ function ProjectGrid() {
       description={project.description}
       url={project.url}
       githubUrl={project.githubUrl}
+      tagsArr={project.tagsArr}
     />
   ));
   return (
