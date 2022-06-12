@@ -24,7 +24,7 @@ const projects = [
     description: 'A weather app that uses the open weather API',
     url: 'https://ernessttan.github.io/weather-app/',
     githubUrl: 'https://github.com/ernessttan/weather-app',
-    tagsArr: ['Javascript', 'Webpack', 'Async Await'],
+    tagsArr: ['Javascript', 'Webpack', 'API'],
   },
 ];
 
