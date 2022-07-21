@@ -11,16 +11,20 @@ function App() {
     setDarkMode((prevState) => !prevState);
   };
 
+  console.log(isDarkMode);
+
   const Home = lazy(() => import("./pages/Home"));
   return (
     <Router>
       <Suspense fallback={<div>Loading...</div>}>
-        <div className="container mx-auto px-8 py-5">
-          <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-          <Footer />
+        <div className={`${isDarkMode && "dark"}`}>
+          <div className="dark:bg-black p-5 px-5">
+            <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+            <Routes>
+              <Route path="/" element={<Home />} />
+            </Routes>
+            <Footer />
+          </div>
         </div>
       </Suspense>
 

@@ -35,8 +35,8 @@ function Projects() {
   ));
 
   return (
-    <section>
-      <h1>Projects ive worked on</h1>
+    <section className="dark:dark-text">
+      <h1 className="dark:dark-text">Projects ive worked on</h1>
       <div className="py-5">
         {projects}
       </div>

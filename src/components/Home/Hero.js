@@ -3,8 +3,8 @@ function Hero() {
     <section>
       <img className="rounded-full h-52 w-52" src="/images/ernest.jpeg" alt="ernest hero" />
       <div className="my-5">
-        <h1>Hey there! Im Ernest</h1>
-        <p>
+        <h1 className="dark:dark-text">Hey there! Im Ernest</h1>
+        <p className="dark:dark-text">
           I am a software engineer from Singapore.
           I am senior at Columbia University majoring in Computer Science.
           I am currently looking for full time opportunities.
