@@ -1,13 +1,28 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Main from './components/Main';
+/* eslint-disable no-unused-vars */
+import { lazy, Suspense, useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
 
 function App() {
+  const [isDarkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode((prevState) => !prevState);
+  };
+
+  const Home = lazy(() => import("./pages/Home"));
   return (
-    <div className="p-6 md:p-8 lg:pl-12 lg:pr-12 xl:pl-16 xl:pr-16">
-      <Navbar />
-      <Main />
-    </div>
+    <Router>
+      <Suspense fallback={<div>Loading...</div>}>
+        <div className="container mx-auto px-8 py-5">
+          <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+          <Routes>
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </div>
+      </Suspense>
+
+    </Router>
   );
 }
 

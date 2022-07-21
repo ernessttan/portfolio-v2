@@ -2,46 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  font-family: 'Poppins', sans-serif;
-  height: 100vh;
-  @apply scroll-smooth;
-}
-body {
-  height: 100%;
-  @apply bg-eggshell
+@layer base {
+  html {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  h1 {
+    color: theme(colors.black);
+    font-weight: theme(fontWeight.bold);
+    font-size: theme(fontSize.2xl)
+  }
+
+  p {
+    font-weight: theme(fontWeight.medium);
+    color: theme(colors.black);
+  }
+
+  section {
+    padding: theme(padding.5) 0 theme(padding.5) 0;
+  }
+
 }
 
-section {
-  @apply mt-10;
-  @apply mb-24;
-}
-
-h1 {
-  @apply text-4xl;
-  @apply font-bold;
-  @apply text-forestgreen; 
-}
-
-h3 {
-  @apply text-2xl;
-  @apply font-normal
-}
-
-.link-underline {
-  border-bottom-width: 0;
-  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
-  background-size: 0 3px;
-  background-position: 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size .5s ease-in-out;
-}
-
-.link-underline-green {
-  background-image: linear-gradient(transparent, transparent), linear-gradient(forestgreen, forestgreen)
-}
-
-.link-underline:hover {
-  background-size: 100% 3px;
-  background-position: 0 100%
+@layer components {
+  .nav-link {
+    font-size: theme(fontSize.xl)
+  }
+  .action-button {
+    background-color: theme(colors.lightblack);
+    color: theme(colors.offwhite);
+    padding: theme(padding.2) theme(padding.8) theme(padding.2) theme(padding.8);
+    border-radius: theme(borderRadius.md);
+  }
 }
