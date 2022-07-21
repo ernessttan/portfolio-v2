@@ -4,14 +4,20 @@
 
 @layer base {
   html {
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
   }
 
   h1 {
     color: theme(colors.black);
     font-weight: theme(fontWeight.bold);
     font-size: theme(fontSize.2xl)
+  }
+
+  h2 {
+    color: theme(colors.black);
+    font-weight: theme(fontWeight.semibold);
+    font-size: theme(fontSize.xl)
   }
 
   p {
@@ -27,12 +33,19 @@
 
 @layer components {
   .nav-link {
-    font-size: theme(fontSize.xl)
+    font-size: theme(fontSize.lg)
   }
   .action-button {
     background-color: theme(colors.lightblack);
     color: theme(colors.offwhite);
     padding: theme(padding.2) theme(padding.8) theme(padding.2) theme(padding.8);
+    border-radius: theme(borderRadius.md);
+    font-weight: theme(fontWeight.bold);
+  }
+
+  .tag {
+    background-color: theme(colors.lightblack);
+    padding: theme(padding.2) theme(padding.3) theme(padding.2) theme(padding.3);
     border-radius: theme(borderRadius.md);
   }
 }

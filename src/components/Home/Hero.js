@@ -10,7 +10,9 @@ function Hero() {
           I am currently looking for full time opportunities.
         </p>
       </div>
-      <button className="action-button" type="button">Hire Me</button>
+      <button className="action-button transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:text-orange duration-300" type="button">
+        <span>Hire Me</span>
+      </button>
     </section>
   );
 }
