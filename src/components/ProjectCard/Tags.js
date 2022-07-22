@@ -7,7 +7,7 @@ function Tags({ tagsArr }) {
 
   const tags = tagsArr.map((title, index) => (
     <div key={index} className="tag">
-      <p className={`${getRandomColor()} text-sm`}>{title}</p>
+      <div className={`${getRandomColor()}`}>{title}</div>
     </div>
   ));
 

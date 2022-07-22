@@ -14,15 +14,27 @@
     font-size: theme(fontSize.2xl);
   }
 
+  h1.desktop {
+    font-size: theme(fontSize.3xl)
+  }
+
   h2 {
     color: theme(colors.black);
     font-weight: theme(fontWeight.semibold);
     font-size: theme(fontSize.xl)
   }
 
+  h2.desktop {
+    font-size: theme(fontSize.2xl)
+  }
+
   p {
     font-weight: theme(fontWeight.medium);
     color: theme(colors.black);
+  }
+
+  p.desktop {
+    font-size: theme(fontSize.xl);
   }
 
   section {
@@ -36,8 +48,14 @@
     color: theme(colors.offwhite);
   }
   .nav-link {
-    font-size: theme(fontSize.lg)
+    font-size: theme(fontSize.lg);
+    font-weight: theme(fontWeight.semibold);
   }
+
+  .nav-link.desktop {
+    font-size: theme(fontSize.xl);
+  }
+
   .action-button {
     background-color: theme(colors.lightblack);
     color: theme(colors.offwhite);
@@ -46,9 +64,18 @@
     font-weight: theme(fontWeight.bold);
   }
 
+  .action-button.desktop {
+    font-size: theme(fontSize.xl)
+  }
+
   .tag {
     background-color: theme(colors.lightblack);
     padding: theme(padding.2) theme(padding.3) theme(padding.2) theme(padding.3);
     border-radius: theme(borderRadius.md);
+    font-size: theme(fontSize.xs);
   }
+}
+
+@layerr utilities {
+ 
 }

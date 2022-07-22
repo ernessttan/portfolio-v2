@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 function OffWhiteSection({ children }) {
   return (
-    <section className="bg-offwhite -mx-8 px-8 dark:bg-lightblack">
+    <section className="bg-offwhite -mx-8 p-8 dark:bg-lightblack md:-mx-14 md:p-14">
       {children}
     </section>
   );

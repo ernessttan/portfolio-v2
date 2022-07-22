@@ -4,15 +4,15 @@ import PropTypes from "prop-types";
 
 function Navbar({ isDarkMode, toggleDarkMode, isNavOpen }) {
   return (
-    <nav className={`${isNavOpen ? "block" : "hidden "} w-full py-5 dark:dark-text md:flex md:w-auto md:items-center md:justify-between md:grow`}>
-      <div className="flex flex-col gap-5 md:gap-20 md:flex-row md:ml-56">
+    <nav className={`${isNavOpen ? "block" : "hidden "} w-full dark:dark-text md:flex md:w-auto md:items-center md:justify-between md:grow`}>
+      <div className="flex flex-col gap-5 md:gap-20 md:flex-row md:ml-20">
         <NavLink className="nav-link" to="/">Home</NavLink>
         <NavLink className="nav-link" to="/">Projects</NavLink>
         <NavLink className="nav-link" to="/contact">Contact</NavLink>
       </div>
       <div className="py-8 flex items-center gap-5 md:py-0">
         <DarkModeSwitch
-          className="mr-5"
+          className="mr-3"
           moonColor="white"
           checked={isDarkMode}
           onChange={toggleDarkMode}

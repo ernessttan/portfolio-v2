@@ -14,8 +14,8 @@ function Technologies() {
 
   return (
     <OffWhiteSection>
-      <h1 className="dark:dark-text">Technologies I Use</h1>
-      <p className="py-2 dark:dark-text">
+      <h1 className="dark:dark-text md:desktop">Technologies I Use</h1>
+      <p className="py-2 dark:dark-text md:desktop">
         I started programming when I started college wher I learned the fundamentals of
       </p>
       <div className="py-5 flex items-center gap-2 overflow-x-scroll w-full">

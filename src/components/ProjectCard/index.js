@@ -8,11 +8,11 @@ function ProjectCard({
   return (
     <div>
       <img className="object-cover rounded shadow mb-3" src={imageUrl} alt="project" />
-      <h2 className="dark:dark-text">{title}</h2>
-      <p className="py-1 dark:dark-text">{description}</p>
-      <div className="flex gap-3 my-2">
-        <a className="font-semibold hover:text-red hover:animate-pulse transition-color duration-500 delay-200" target="_blank" href={projectUrl} rel="noreferrer">See it Live</a>
-        <a className="font-semibold hover:text-orange hover:animate-pulse transition-color duration-500 delay-200" target="_blank" href={codeUrl} rel="noreferrer">Code</a>
+      <h2 className="dark:dark-text md:desktop">{title}</h2>
+      <p className="py-1 dark:dark-text md:desktop">{description}</p>
+      <div className="flex gap-5 my-2">
+        <a className="font-semibold hover:text-red hover:animate-pulse transition-color duration-500 delay-200 text-lg" target="_blank" href={projectUrl} rel="noreferrer">See it Live</a>
+        <a className="font-semibold hover:text-orange hover:animate-pulse transition-color duration-500 delay-200 text-lg" target="_blank" href={codeUrl} rel="noreferrer">Code</a>
       </div>
       <Tags tagsArr={tagsArr} />
     </div>
