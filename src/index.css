@@ -6,6 +6,7 @@
   html {
     min-height: 100vh;
     min-width: 100vw;
+    scroll-behanvior: smooth;
   }
 
   h1 {
@@ -18,6 +19,10 @@
     font-size: theme(fontSize.3xl)
   }
 
+  h1.desktop-large {
+    font-size: theme(fontSize.4xl)
+  }
+
   h2 {
     color: theme(colors.black);
     font-weight: theme(fontWeight.semibold);
@@ -28,8 +33,12 @@
     font-size: theme(fontSize.2xl)
   }
 
+  h2.desktop-large {
+    font-size: theme(fontSize.3xl);
+  }
+
   p {
-    font-weight: theme(fontWeight.medium);
+    font-weight: theme(fontWeight.normal);
     color: theme(colors.black);
   }
 
@@ -37,13 +46,33 @@
     font-size: theme(fontSize.xl);
   }
 
+  p.desktop-large {
+    font-size: theme(fontSize.2xl);
+  }
+
   section {
     padding: theme(padding.5) 0 theme(padding.5) 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
   }
 
 }
 
 @layer components {
+  .logo {
+    height: theme(width.8);
+    width: theme(height.8);
+    fill: theme(colors.black);
+  }
+
+  .logo.desktop {
+    width: theme(width.12);
+    height: theme(height.12);
+  }
+
   .dark-text {
     color: theme(colors.offwhite);
   }
@@ -52,8 +81,17 @@
     font-weight: theme(fontWeight.semibold);
   }
 
+  .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: theme(textDecorationThickness.4);
+  }
+
   .nav-link.desktop {
     font-size: theme(fontSize.xl);
+  }
+
+  .nav-link.desktop-large {
+    font-size: theme(fontSize.2xl);
   }
 
   .action-button {
@@ -74,8 +112,19 @@
     border-radius: theme(borderRadius.md);
     font-size: theme(fontSize.xs);
   }
+  
+  .footer-icon {
+    height: theme(height.6);
+    width: theme(width.6);
+  }
+
+  .footer-icon.desktop {
+    height: theme(height.8);
+    width: theme(width.8);
+  }
+
+  #techCarousel {
+    scroll-behavior: smooth;
+  }
 }
 
-@layerr utilities {
- 
-}
