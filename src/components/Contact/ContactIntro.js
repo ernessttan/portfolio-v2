@@ -10,7 +10,7 @@ function ContactIntro() {
         I am always excited to hear from people so please
         get in touch with me via one of these methods:
       </p>
-      <div className="grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3 my-10">
+      <div className="grid grid-cols-1 items-center gap-3 md:grid-cols-2 lg:grid-cols-3 my-10">
         <div>
           <div className="flex items-center gap-3">
             <MailIcon className="w-8 h-8 dark:text-offwhite" />

@@ -25,6 +25,7 @@ function Header({ isDarkMode, toggleDarkMode }) {
         isNavOpen={isNavOpen}
         isDarkMode={isDarkMode}
         toggleDarkMode={toggleDarkMode}
+        toggleNav={toggleNav}
       />
     </header>
   );
