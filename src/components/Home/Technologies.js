@@ -28,13 +28,13 @@ function Technologies() {
     <OffWhiteSection>
       <h1 className="dark:dark-text md:desktop lg:desktop-large">Technologies I Use</h1>
       <p className="py-2 dark:dark-text md:desktop lg:desktop-large">
-        I started programming when I started college wher I learned the fundamentals of
+        {/* I started programming when I started college wher I learned the fundamentals of */}
       </p>
       <div className="flex items-center gap-5">
         <button onClick={handleScrollLeft} type="button" className="hidden w-16 h-16 dark:text-offwhite md:block">
           <ChevronLeftIcon />
         </button>
-        <div className="py-5 flex items-center gap-2 overflow-x-scroll w-full" id="techCarousel">
+        <div className="py-5 flex items-center gap-2 overflow-x-scroll md:overflow-hidden w-full" id="techCarousel">
           {techGallery}
         </div>
         <button onClick={handleScrollRight} type="button" className="hidden w-16 h-16 dark:text-offwhite  md:block">

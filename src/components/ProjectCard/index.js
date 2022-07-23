@@ -1,7 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable max-len */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/no-array-index-key */
 import PropTypes from "prop-types";
 import Tags from "./Tags";
 
@@ -9,8 +5,10 @@ function ProjectCard({
   title, description, imageUrl, codeUrl, projectUrl, tagsArr,
 }) {
   return (
-    <div className="w-full h-auto p-3 transform transition duration-500 hover:scale-105 cursor-pointer">
-      <img className="object-cover shadow-xl mb-6 rounded h-auto" src={imageUrl} alt="project" />
+    <div className="w-full h-auto p-3 transform transition duration-500 hover:scale-105">
+      <a className="cursor-pointer" target="_blank" href={projectUrl} rel="noreferrer">
+        <img className="object-cover shadow-xl mb-6 rounded h-auto" src={imageUrl} alt="project" />
+      </a>
       <h2 className="dark:dark-text md:desktop lg:desktop-large">{title}</h2>
       <p className="py-1 dark:dark-text md:desktop lg:desktop-large">{description}</p>
       <div className="flex gap-5 my-2">

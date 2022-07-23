@@ -126,5 +126,10 @@
   #techCarousel {
     scroll-behavior: smooth;
   }
+
+  #techCarousel::webkit-scrollbar {
+    width: 0;
+    background: transparent;  
+  }
 }
 
