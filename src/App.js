@@ -13,6 +13,7 @@ function App() {
   };
 
   const Home = lazy(() => import("./pages/Home"));
+  const Contact = lazy(() => import("./pages/Contact"));
   return (
     <Router>
       <Suspense fallback={<Loader />}>
@@ -21,6 +22,7 @@ function App() {
             <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
           </div>

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 function Navbar({ isDarkMode, toggleDarkMode, isNavOpen }) {
   return (
-    <nav className={`${isNavOpen ? "block" : "hidden "} w-full dark:dark-text md:flex md:w-auto md:items-center md:justify-between md:grow`}>
+    <nav className={`${isNavOpen ? "block py-5" : "hidden "} w-full dark:dark-text md:flex md:w-auto md:items-center md:justify-between md:grow`}>
       <div className="flex flex-col gap-5 md:gap-20 md:flex-row md:ml-20">
         <NavLink className="nav-link" to="/">Home</NavLink>
         <NavLink className="nav-link" to="/">Projects</NavLink>
@@ -46,7 +46,7 @@ function Navbar({ isDarkMode, toggleDarkMode, isNavOpen }) {
             <circle cx="4" cy="4" r="2" />
           </svg>
         </a>
-        <a target="_blank" href="https://www.twitter.com" rel="noreferrer">
+        <a target="_blank" href="mailto:ernesttancw@gmail.com" rel="noreferrer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
