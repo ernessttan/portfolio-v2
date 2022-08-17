@@ -9,10 +9,6 @@
     scroll-behanvior: smooth;
   }
 
-  main {
-    padding: theme(padding.5) 0 theme(padding.5) 0;
-  }
-
   h1 {
     color: theme(colors.black);
     font-weight: theme(fontWeight.bold);
@@ -71,36 +67,8 @@
 }
 
 @layer components {
-  .logo {
-    height: theme(width.8);
-    width: theme(height.8);
-    fill: theme(colors.black);
-  }
-
-  .logo.desktop {
-    width: theme(width.12);
-    height: theme(height.12);
-  }
-
   .dark-text {
     color: theme(colors.offwhite);
-  }
-  .nav-link {
-    font-size: theme(fontSize.lg);
-    font-weight: theme(fontWeight.semibold);
-  }
-
-  .nav-link:hover {
-    text-decoration: underline;
-    text-decoration-thickness: theme(textDecorationThickness.4);
-  }
-
-  .nav-link.desktop {
-    font-size: theme(fontSize.xl);
-  }
-
-  .nav-link.desktop-large {
-    font-size: theme(fontSize.2xl);
   }
 
   .action-button {
@@ -120,16 +88,6 @@
     padding: theme(padding.2) theme(padding.3) theme(padding.2) theme(padding.3);
     border-radius: theme(borderRadius.md);
     font-size: theme(fontSize.xs);
-  }
-  
-  .footer-icon {
-    height: theme(height.6);
-    width: theme(width.6);
-  }
-
-  .footer-icon.desktop {
-    height: theme(height.8);
-    width: theme(width.8);
   }
 
   #techCarousel {
