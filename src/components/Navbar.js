@@ -9,7 +9,7 @@ function Navbar({
   darkMode, toggleDarkMode, isNavOpen, toggleNav,
 }) {
   return (
-    <nav className={`${isNavOpen ? "block py-5" : "hidden "} w-full dark:dark-text md:flex md:w-auto md:items-center md:justify-between md:grow`}>
+    <nav className={`${isNavOpen ? "block" : "hidden"} w-full py-5 dark:dark-text md:flex md:w-auto md:items-center md:justify-between md:grow`}>
       <div className="flex flex-col gap-5 md:gap-20 md:flex-row md:ml-20">
         <NavLink onClick={toggleNav} className="text-lg font-semibold decoration-4 hover:underline md:text-xl" to="/">Home</NavLink>
         <NavLink onClick={toggleNav} className="text-lg font-semibold decoration-4 hover:underline md:text-xl" to="/contact">Contact</NavLink>
