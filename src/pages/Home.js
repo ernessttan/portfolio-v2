@@ -1,12 +1,14 @@
 /* eslint-disable react/no-array-index-key */
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Section from "../components/layout/Section";
 import LightSection from "../components/layout/LightSection";
 import TechnologyCard from "../components/TechnologyCard";
 import ProjectCard from "../components/ProjectCard";
 
 function Home() {
+  const navigate = useNavigate();
   const technologies = ["react", "webpack", "tailwindcss", "nodejs", "express", "mongodb", "python", "npm", "javascript", "git"];
   const [projectData, setProjectData] = useState();
 
@@ -44,7 +46,7 @@ function Home() {
             I am senior at Columbia University majoring in Computer Science.
             I am currently looking for full time opportunities.
           </p>
-          <button className="action-button transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:text-orange duration-300 mt-5 md:desktop" type="button">
+          <button onClick={() => navigate("/contact")} className="action-button transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:text-orange duration-300 mt-5 md:desktop" type="button">
             <p className="text-offwhite">Hire Me</p>
           </button>
         </div>
